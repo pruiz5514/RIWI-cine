@@ -34,7 +34,7 @@
                     <span>Cartelera</span>
                     <i class="bi bi-camera-reels"></i>
                 </a></li>
-                <li><a href="">
+                <li><a href="#contacto">
                     <span>Contacto</span>
                     <i class="bi bi-telephone"></i>
                 </a></li>
@@ -42,8 +42,8 @@
         </nav>
     </header>
     <main class="main">
-        <h2>Estrenos</h2>
-        <section id="estrenos" class="peliculas">
+        <h2 id="estrenos">Estrenos</h2>
+        <section class="peliculas">
             <article class="pelicula-estreno">
                 <figure>
                     <img src="https://archivos-cms.cinecolombia.com/images/_aliases/poster_card/4/5/7/6/56754-1-esl-CO/381eed682206-2_poster_480x670.png" alt="10 lives">
@@ -118,8 +118,8 @@
             </article>
         </section>
 
-        <h2>Cartelera</h2>
-        <section id="cartelera" class="peliculas">
+        <h2 id="cartelera">Cartelera</h2>
+        <section class="peliculas">
             <article class="pelicula-estreno">
                 <figure>
                     <img src="https://archivos-cms.cinecolombia.com/images/_aliases/poster_card/7/6/3/2/42367-9-esl-CO/d169098fab9a-warner_dune2_cinecol_480x670.jpg" alt="Duna ">
@@ -191,10 +191,34 @@
                     </p>
                     <a class="boton-comprar" href="https://www.paypal.com/co/home" target="_blank"><button>Comprar boleta</button></a>
                 </div>
-            </article>
-            
+            </article>    
+        </section>
+
+        <h2 id="contacto">Contacto</h2>
+        <section class="contacto">
+            <h3>Contactanos ante cualquier inquietud</h3>
+            <form class="formulario" action="./src/pages/server.html" method="get">
+                <label for="nombre-completo">Nombre completo</label>
+                <input type="text" name="nombre-completo" id="nombre-completo">
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" cols="30" rows="10" id="mensaje"></textarea>
+                <input type="submit" class="boton-formulario">
+            </form>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <section class="copyright">
+            <p>© 2024 Riwi Cine</p>
+        </section>
+        <section class="redes-sociales">
+            <ul class="lista-redes">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>
