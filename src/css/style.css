@@ -50,19 +50,18 @@
 }
 
 .main{
-    width: 90%;
+    width: 85%;
     height: auto;
     margin: 0 auto;
     padding-top: 40px;
     background-color: aliceblue;
 }
-#estrenos{
+.peliculas{
     display: flex;
     width: 100%;
     height: auto;
-    background-color: azure;
     padding:20px;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 .pelicula-estreno{
@@ -71,6 +70,7 @@
     padding: 10px 10px 30px 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
+    position: relative;
 }
 figure{
     width: 100%;
@@ -94,6 +94,8 @@ img{
 .boton-comprar{
     text-decoration: none;
     align-self: center;
+    position: absolute;
+    bottom: 15px;
     
 }
 .boton-comprar button{
